@@ -1,8 +1,53 @@
 {
-  "name": "nomnoml-preview",
-  "main": "./lib/nomnoml-preview",
-  "version": "0.2.4",
+  "activationCommands": {
+    "atom-workspace": "nomnoml-preview:toggle"
+  },
+  "bugs": {
+    "url": "https://github.com/arron/nomnoml-preview/issues"
+  },
+  "bundleDependencies": false,
+  "configSchema": {
+    "showControls": {
+      "title": "Show Controls",
+      "description": "Show Zoom and Pan controls",
+      "type": "boolean",
+      "default": false
+    },
+    "startCentered": {
+      "title": "Start Centered",
+      "description": "Start with the preview centered in the pane",
+      "type": "boolean",
+      "default": true
+    },
+    "startFitedToPane": {
+      "title": "Start Zoomed Out",
+      "description": "Start with the preview zoomed out or fitted to the pane",
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "dependencies": {
+    "atom-space-pen-views": "^2.2.0",
+    "nan": "^2.14.1",
+    "nomnoml": "^0.8.0",
+    "svg-pan-zoom": "^3.6.1"
+  },
+  "deprecated": false,
   "description": "Nomnoml preview in Atom",
+  "devDependencies": {
+    "eslint": "^7.7.0",
+    "eslint-config-semistandard": "^15.0.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "tree-sitter-cli": "^0.16.9"
+  },
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "homepage": "https://github.com/arrorn/nomnoml-preview#readme",
   "keywords": [
     "Nomnoml",
     "uml",
@@ -11,25 +56,14 @@
     "atom"
   ],
   "license": "MIT",
+  "main": "./lib/nomnoml-preview",
+  "name": "nomnoml-preview",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arrorn/nomnoml-preview.git"
+  },
   "scripts": {
     "lint": "eslint ."
   },
-  "activationCommands": {
-    "atom-workspace": "nomnoml-preview:toggle"
-  },
-  "repository": "https://github.com/Coac/nomnoml-preview",
-  "engines": {
-    "atom": ">=1.0.0 <2.0.0"
-  },
-  "dependencies": {
-    "atom-space-pen-views": "^2.2.0",
-    "nomnoml": "0.0.4"
-  },
-  "devDependencies": {
-    "eslint": "^3.9.1",
-    "eslint-config-semistandard": "^7.0.0",
-    "eslint-config-standard": "^6.2.1",
-    "eslint-plugin-promise": "^3.3.0",
-    "eslint-plugin-standard": "^2.0.1"
-  }
+  "version": "0.2.4"
 }

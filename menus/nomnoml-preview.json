@@ -1,26 +1,26 @@
 {
-  "context-menu": {
-    "atom-text-editor": [
-      {
-        "label": "Toggle nomnoml-preview",
-        "command": "nomnoml-preview:toggle"
-      }
-    ]
-  },
-  "menu": [
-    {
-      "label": "Packages",
-      "submenu": [
-        {
-          "label": "nomnoml-preview",
-          "submenu": [
+    "context-menu": {
+        "atom-text-editor": [
             {
-              "label": "Toggle",
-              "command": "nomnoml-preview:toggle"
+                "label": "Toggle nomnoml-preview",
+                "command": "nomnoml-preview:toggle"
             }
-          ]
+        ]
+    },
+    "menu": [
+        {
+            "label": "Packages",
+            "submenu": [
+                {
+                    "label": "Nomnoml Preview",
+                    "submenu": [
+                        {
+                            "label": "Toggle Preview",
+                            "command": "nomnoml-preview:toggle"
+                        }
+                    ]
+                }
+            ]
         }
-      ]
-    }
-  ]
+    ]
 }

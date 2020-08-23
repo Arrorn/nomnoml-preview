@@ -1,0 +1,41 @@
+[Pirate
+  |# eyeCount: Int
+  |
+  + raid()
+  ;pillage()
+  |
+  [beard]--[parrot]
+  [beard]-:>[foul mouth]
+]
+
+[rum
+  |- tastiness: Int
+  |swig()
+]
+
+[<abstract>Marauder]<:--[Pirate]
+[Pirate]- 0..7[mischief]
+[jollyness]->[Pirate]
+[jollyness]->[rum]
+[jollyness]->[singing]
+[Pirate]-> *[rum]
+[Pirate]->[singing]
+[singing]<->[rum]
+
+[<start>st]->[<state>plunder]
+[plunder]->[<choice>more loot]
+[more loot]->[st]
+[more loot] no ->[<end>e]
+
+[<actor>Sailor] - [<usecase>shiver me;timbers]
+
+
+[Captain Jack:Rum
+  |- tastiness=10
+]
+
+[Bob:Pirate
+  | # eyeCount = 1
+]
+
+[Bob:Pirate] has -> 5 [Captain Jack:Rum]

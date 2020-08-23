@@ -1,12 +1,24 @@
 {
-  "extends": "semistandard",
-  "env": {
-    "node": true,
-    "es6": true,
-    "mocha": true,
-    "jasmine": true
-  },
-  "globals": {
-    "atom": true
-  }
+    'extends': [
+        'eslint:recommended',
+        'semistandard'
+    ],
+    'env': {
+        'browser': true,
+        'node': true,
+        'es6': true,
+        'mocha': true,
+        'jasmine': true
+    },
+    'globals': {
+        'atom': true
+    },
+    'parser': 'esprima',
+    'parserOptions': {
+        'sourceType': 'module'
+    },
+    'rules': {
+        'indent': ['error', 4],
+        'brace-style': ['error', 'allman', { 'allowSingleLine': true }]
+    }
 }
