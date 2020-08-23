@@ -60,8 +60,19 @@
     "type": "git",
     "url": "git+https://github.com/arrorn/nomnoml-preview.git"
   },
+  "contributors": [
+      {
+          "name": "Victor Le",
+          "url": "http://github.com/Coac"
+      },
+      {
+          "name": "Arrorn",
+          "email": "Arrorn@Arrorn.com",
+          "url": "http://Arrorn.com"
+      }
+  ],
   "scripts": {
     "lint": "eslint ."
   },
-  "version": "0.2.4"
+  "version": "0.2.5"
 }
